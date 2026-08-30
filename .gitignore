@@ -1,0 +1,3 @@
+# nunca subir credenciales ni datos de sesion
+.credentials.json
+*.bak-*

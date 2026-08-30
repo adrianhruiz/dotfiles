@@ -1,0 +1,17 @@
+{
+  "theme": "dark",
+  "skipDangerousModePermissionPrompt": true,
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "paplay --volume=26214 \"$HOME/.claude/sounds/habbo.wav\" 2>/dev/null || true",
+            "async": true
+          }
+        ]
+      }
+    ]
+  }
+}
