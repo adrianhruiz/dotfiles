@@ -24,6 +24,13 @@ link "$DOT/claude/CLAUDE.md"          "$CLAUDE_DIR/CLAUDE.md"
 link "$DOT/claude/sounds/habbo.wav"   "$CLAUDE_DIR/sounds/habbo.wav"
 link "$DOT/claude/sounds/habbo.m4a"   "$CLAUDE_DIR/sounds/habbo.m4a"
 
+echo "Enlazando config de la statusline (ccstatusline)"
+link "$DOT/config/ccstatusline/settings.json" "$HOME/.config/ccstatusline/settings.json"
+if ! command -v ccstatusline >/dev/null 2>&1; then
+  echo "  ccstatusline no encontrado; instalando con npm..."
+  npm install -g ccstatusline@latest
+fi
+
 echo "Enlazando skills propias desde $DOT/agents/skills"
 for skill in "$DOT"/agents/skills/*/; do
   skill="${skill%/}"

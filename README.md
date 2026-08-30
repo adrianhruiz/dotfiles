@@ -22,8 +22,14 @@ El login (`~/.claude/.credentials.json`) **no** está en el repo: se hace a mano
 
 | Archivo | Qué es |
 |---|---|
-| `claude/settings.json` | tema, hook de sonido, permisos |
+| `claude/settings.json` | tema, hook de sonido, permisos, statusline |
+| `claude/CLAUDE.md` | reglas globales |
 | `claude/sounds/` | sonido del hook |
+| `config/ccstatusline/settings.json` | config de la statusline (ccstatusline) |
+| `agents/skills/` | skills propias |
+
+La statusline usa [`ccstatusline`](https://www.npmjs.com/package/ccstatusline) (npm global).
+`install.sh` lo instala si no está.
 
 ## Actualizar
 
