@@ -1,0 +1,3 @@
+interface:
+  display_name: "assd"
+  short_description: "Plan, organise, test and ship a project to GitHub with git flow"
