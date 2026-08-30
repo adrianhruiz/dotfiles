@@ -20,6 +20,7 @@ link() {
 
 echo "Instalando config de Claude Code desde $DOT/claude"
 link "$DOT/claude/settings.json"      "$CLAUDE_DIR/settings.json"
+link "$DOT/claude/CLAUDE.md"          "$CLAUDE_DIR/CLAUDE.md"
 link "$DOT/claude/sounds/habbo.wav"   "$CLAUDE_DIR/sounds/habbo.wav"
 link "$DOT/claude/sounds/habbo.m4a"   "$CLAUDE_DIR/sounds/habbo.m4a"
 
