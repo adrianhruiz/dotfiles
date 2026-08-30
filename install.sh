@@ -24,5 +24,13 @@ link "$DOT/claude/CLAUDE.md"          "$CLAUDE_DIR/CLAUDE.md"
 link "$DOT/claude/sounds/habbo.wav"   "$CLAUDE_DIR/sounds/habbo.wav"
 link "$DOT/claude/sounds/habbo.m4a"   "$CLAUDE_DIR/sounds/habbo.m4a"
 
+echo "Enlazando skills propias desde $DOT/agents/skills"
+for skill in "$DOT"/agents/skills/*/; do
+  skill="${skill%/}"
+  name="$(basename "$skill")"
+  link "$skill" "$HOME/.agents/skills/$name"
+  link "$skill" "$CLAUDE_DIR/skills/$name"
+done
+
 echo
 echo "Hecho. Ahora ejecuta 'claude' e inicia sesion (el login NO se guarda en el repo)."
